@@ -1,0 +1,151 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\HyPL@Entry{1<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}选题背景与需求分析}{4}{section.1}\protected@file@percent }
+\newlabel{sec:bg}{{1}{4}{选题背景与需求分析}{section.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}招聘场景的核心矛盾}{4}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}招聘流程中的四类核心痛点}{4}{subsection.1.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces 招聘流程各阶段的 HR 实际工作与主要痛点}}{4}{table.1}\protected@file@percent }
+\newlabel{tab:hr-pain-stage}{{1}{4}{招聘流程各阶段的 HR 实际工作与主要痛点}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces 招聘流程中的四类核心痛点流水线}}{5}{figure.1}\protected@file@percent }
+\newlabel{fig:pain-pipeline}{{1}{5}{招聘流程中的四类核心痛点流水线}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}从行业痛点到技术选型的反向推演}{5}{subsection.1.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces 行业痛点与技术选型的对应关系}}{6}{table.2}\protected@file@percent }
+\newlabel{tab:pain-tech}{{2}{6}{行业痛点与技术选型的对应关系}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}为什么必须是 Agent，而不是单次 LLM 调用}{6}{subsection.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5}选题立意与价值定位}{6}{subsection.1.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces ScoutAgent 与传统筛选工具的定位对比}}{7}{table.3}\protected@file@percent }
+\newlabel{tab:position-compare}{{3}{7}{ScoutAgent 与传统筛选工具的定位对比}{table.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Agent 架构设计}{7}{section.2}\protected@file@percent }
+\newlabel{sec:agent}{{2}{7}{Agent 架构设计}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}整体架构总览}{7}{subsection.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces ScoutAgent 后端 Agent 整体架构总览}}{8}{figure.2}\protected@file@percent }
+\newlabel{fig:agent-overview}{{2}{8}{ScoutAgent 后端 Agent 整体架构总览}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Function Calling：三层工具体系}{8}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Function Calling 三层工具体系}}{8}{figure.3}\protected@file@percent }
+\newlabel{fig:fc-layers}{{3}{8}{Function Calling 三层工具体系}{figure.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Tools / Skills / MCP 三类工具对比}}{9}{table.4}\protected@file@percent }
+\newlabel{tab:fc-compare}{{4}{9}{Tools / Skills / MCP 三类工具对比}{table.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Tools：原生函数工具}{9}{subsubsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Skills：渐进披露的标准技能}{9}{subsubsection.2.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Skills 渐进披露的三档加载策略}}{10}{figure.4}\protected@file@percent }
+\newlabel{fig:skills-progressive}{{4}{10}{Skills 渐进披露的三档加载策略}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}MCP：外部协议层}{10}{subsubsection.2.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces MCP Server 注册与连接时序}}{10}{figure.5}\protected@file@percent }
+\newlabel{fig:mcp-seq}{{5}{10}{MCP Server 注册与连接时序}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}统一解析：运行时按需绑定}{10}{subsubsection.2.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Memory 体系：短时工作记忆 + 长期偏好沉淀}{11}{subsection.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces ScoutAgent 两层记忆体系}}{11}{figure.6}\protected@file@percent }
+\newlabel{fig:memory-layers}{{6}{11}{ScoutAgent 两层记忆体系}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}工作记忆：状态结构与上下文裁剪}{11}{subsubsection.2.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}长期偏好：企业级与岗位级双 scope}{12}{subsubsection.2.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces 企业级 / 岗位级偏好的实体关系}}{12}{figure.7}\protected@file@percent }
+\newlabel{fig:pref-er}{{7}{12}{企业级 / 岗位级偏好的实体关系}{figure.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Planning：ReAct 与 Plan-and-Execute 双范式}{12}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}ReAct：经典 Reason–Act–Observe 循环}{12}{subsubsection.2.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Chat Graph：ReAct 编排结构}}{13}{figure.8}\protected@file@percent }
+\newlabel{fig:react-graph}{{8}{13}{Chat Graph：ReAct 编排结构}{figure.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Plan-and-Execute：先规划、再逐步执行、再重规划}{13}{subsubsection.2.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Planning Graph：Plan-and-Execute 编排结构}}{13}{figure.9}\protected@file@percent }
+\newlabel{fig:pae-graph}{{9}{13}{Planning Graph：Plan-and-Execute 编排结构}{figure.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Plan-and-Execute 三个核心节点}}{13}{table.5}\protected@file@percent }
+\newlabel{tab:pae-nodes}{{5}{13}{Plan-and-Execute 三个核心节点}{table.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}两种范式的取舍}{14}{subsubsection.2.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces ReAct 与 Plan-and-Execute 五维对比}}{14}{table.6}\protected@file@percent }
+\newlabel{tab:react-vs-pae}{{6}{14}{ReAct 与 Plan-and-Execute 五维对比}{table.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}关键算法与实验验证}{14}{section.3}\protected@file@percent }
+\newlabel{sec:exp}{{3}{14}{关键算法与实验验证}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}算法体系概览}{14}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces 三项关键算法及其输入输出关系}}{15}{figure.10}\protected@file@percent }
+\newlabel{fig:exp-overview}{{10}{15}{三项关键算法及其输入输出关系}{figure.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}结构化信息抽取（Qwen API + CoT）}{15}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}方法要点}{15}{subsubsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}评测设置与结果}{15}{subsubsection.3.2.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces 结构化信息抽取性能对比（简历评测，n = 5{,}960）}}{15}{table.7}\protected@file@percent }
+\newlabel{tab:exp-extraction}{{7}{15}{结构化信息抽取性能对比（简历评测，n = 5{,}960）}{table.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}技术知识图谱与 GraphRAG 匹配增强}{16}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}图谱构建}{16}{subsubsection.3.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces 知识图谱关系类型与权重}}{16}{table.8}\protected@file@percent }
+\newlabel{tab:kg-rel}{{8}{16}{知识图谱关系类型与权重}{table.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}GraphRAG 匹配判别流程}{16}{subsubsection.3.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces GraphRAG 匹配判别流程及对照分支}}{17}{figure.11}\protected@file@percent }
+\newlabel{fig:graphrag}{{11}{17}{GraphRAG 匹配判别流程及对照分支}{figure.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}实验一：留一技能补全}{17}{subsubsection.3.3.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces 留一技能补全的对照结果}}{17}{table.9}\protected@file@percent }
+\newlabel{tab:exp-loo}{{9}{17}{留一技能补全的对照结果}{table.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.4}实验二：JD/CV 匹配二分类}{18}{subsubsection.3.3.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces JD/CV 匹配二分类准确率（剔除 Potential Fit）}}{18}{table.10}\protected@file@percent }
+\newlabel{tab:exp-match}{{10}{18}{JD/CV 匹配二分类准确率（剔除 Potential Fit）}{table.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}简历过度包装检测（SFT + DPO）}{18}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}任务定义}{18}{subsubsection.3.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}数据合成}{18}{subsubsection.3.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces DPO 数据合成策略与字段语义}}{19}{table.11}\protected@file@percent }
+\newlabel{tab:dpo-strategy}{{11}{19}{DPO 数据合成策略与字段语义}{table.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}训练顺序与评测协议}{19}{subsubsection.3.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces 过度包装检测结果（测试集 n = 200）}}{19}{table.12}\protected@file@percent }
+\newlabel{tab:exp-fabrication}{{12}{19}{过度包装检测结果（测试集 n = 200）}{table.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}微调模型服务化部署}{19}{subsection.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}技术栈与部署}{20}{section.4}\protected@file@percent }
+\newlabel{sec:tech}{{4}{20}{技术栈与部署}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}总体架构}{20}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces ScoutAgent 总体技术架构}}{20}{figure.12}\protected@file@percent }
+\newlabel{fig:tech-overview}{{12}{20}{ScoutAgent 总体技术架构}{figure.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}前端}{20}{subsection.4.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces 前端技术栈}}{21}{table.13}\protected@file@percent }
+\newlabel{tab:tech-fe}{{13}{21}{前端技术栈}{table.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}后端 API}{21}{subsection.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces 后端 API 技术栈}}{22}{table.14}\protected@file@percent }
+\newlabel{tab:tech-be}{{14}{22}{后端 API 技术栈}{table.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Agent 框架}{22}{subsection.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Agent 框架技术栈}}{23}{table.15}\protected@file@percent }
+\newlabel{tab:tech-ag}{{15}{23}{Agent 框架技术栈}{table.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}数据存储}{23}{subsection.4.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces 数据存储}}{23}{table.16}\protected@file@percent }
+\newlabel{tab:tech-store}{{16}{23}{数据存储}{table.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}部署}{24}{subsection.4.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces 部署方案}}{24}{table.17}\protected@file@percent }
+\newlabel{tab:tech-deploy}{{17}{24}{部署方案}{table.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}云端运行环境与 AutoDL 推理隧道}{24}{subsection.4.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces 部署拓扑：Web、数据层与 AutoDL 推理（SSH 端口转发）}}{25}{figure.13}\protected@file@percent }
+\newlabel{fig:deploy-topo}{{13}{25}{部署拓扑：Web、数据层与 AutoDL 推理（SSH 端口转发）}{figure.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}系统功能展示}{25}{section.5}\protected@file@percent }
+\newlabel{sec:func}{{5}{25}{系统功能展示}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}页面总览}{25}{subsection.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces ScoutAgent 五大业务页面}}{26}{table.18}\protected@file@percent }
+\newlabel{tab:page-overview}{{18}{26}{ScoutAgent 五大业务页面}{table.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces 五大页面的业务闭环}}{26}{figure.14}\protected@file@percent }
+\newlabel{fig:page-loop}{{14}{26}{五大页面的业务闭环}{figure.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}企业与岗位管理}{27}{subsection.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces 企业与岗位工作台：三栏布局}}{27}{figure.15}\protected@file@percent }
+\newlabel{fig:page-enterprise}{{15}{27}{企业与岗位工作台：三栏布局}{figure.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}候选人管理}{28}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces 候选人库：简历的全生命周期管理}}{28}{figure.16}\protected@file@percent }
+\newlabel{fig:page-candidate}{{16}{28}{候选人库：简历的全生命周期管理}{figure.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}批量化评估看板}{29}{subsection.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces 批量化评估看板：双任务并列触发}}{29}{figure.17}\protected@file@percent }
+\newlabel{fig:page-dashboard}{{17}{29}{批量化评估看板：双任务并列触发}{figure.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}深度评估 Agent（重点）}{30}{subsection.5.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces 深度评估 Agent：三栏对话界面与 Plan 可视化}}{30}{figure.18}\protected@file@percent }
+\newlabel{fig:page-assistant}{{18}{30}{深度评估 Agent：三栏对话界面与 Plan 可视化}{figure.18}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.1}整体布局与两种对话模式}{30}{subsubsection.5.5.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {19}{\ignorespaces 深度评估 Agent 的两种对话模式}}{30}{table.19}\protected@file@percent }
+\newlabel{tab:dialog-mode}{{19}{30}{深度评估 Agent 的两种对话模式}{table.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2}会话管理：持久化与断流恢复}{31}{subsubsection.5.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.3}SSE 七类流式事件渲染}{31}{subsubsection.5.5.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {20}{\ignorespaces SSE 事件类型与前端反应}}{31}{table.20}\protected@file@percent }
+\newlabel{tab:sse-events}{{20}{31}{SSE 事件类型与前端反应}{table.20}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.4}Planning 模式可视化}{31}{subsubsection.5.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5}右栏：上下文与能力面板}{32}{subsubsection.5.5.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.6}与 Agent 三要素的呼应}{32}{subsubsection.5.5.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {21}{\ignorespaces 深度评估 Agent 页面对 Function Calling / Memory / Planning 的可见体现}}{32}{table.21}\protected@file@percent }
+\newlabel{tab:agent-elements-page}{{21}{32}{深度评估 Agent 页面对 Function Calling / Memory / Planning 的可见体现}{table.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Eval 系统}{33}{subsection.5.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Eval 系统：离线评测中心}}{33}{figure.19}\protected@file@percent }
+\newlabel{fig:page-eval}{{19}{33}{Eval 系统：离线评测中心}{figure.19}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}结论与展望}{33}{section.6}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{33}{结论与展望}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}核心结论}{34}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}局限与未来工作}{34}{subsection.6.2}\protected@file@percent }
+\gdef \@abspage@last{35}
